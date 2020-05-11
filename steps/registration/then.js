@@ -1,14 +1,14 @@
 import { Then } from "cucumber";
 import assert from "assert";
 
-Then("The user dashboard is displayed", () => {
-  const links = $$("#root > div > header > div");
+Then("The Registration page is displayed", () => {
+  const links = $$("#kc-page-title");
   links.forEach((link) => {
     const linkText = link.getText().toLowerCase();
     if (linkText) {
       assert(
-        linkText.includes("dashboard"),
-        `Link Text does not include ${"dashboard"}`
+        linkText.includes("register"),
+        `Link Text does not include ${"register"}`
       );
     }
   });

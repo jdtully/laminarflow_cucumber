@@ -1,20 +1,15 @@
 import { When } from "cucumber";
 
-// When(/^I put "(.*)" in the name field$/, () => {
-//   $("username").waitForDisplayed(100000);
-//   $("username").click();
-//   $("username").setValue("ctester");
-// });
-When(/^The user puts "ctester" in the name field$/, () => {
+When(/^The user puts "(.*)" in the name field$/, (keyword) => {
   $("#username").waitForDisplayed(10000);
   $("#username").click();
-  $("#username").setValue("ctester");
+  $("#username").setValue(keyword);
 });
 
-When(/^The user puts "w5KjzGVi2jisTc" in the password field$/, () => {
-  $("#password").waitForDisplayed(10000);
+When(/^The user puts "(.*)" in the password field$/, (keyword) => {
+  // $("#password").waitForDisplayed(10000);
   $("#password").click();
-  $("#password").setValue("w5KjzGVi2jisTc");
+  $("#password").setValue(keyword);
 });
 
 When("The user clicks register", () => {

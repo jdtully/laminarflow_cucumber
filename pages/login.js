@@ -4,23 +4,23 @@ class Login {
   }
 
   get nameField() {
-    return $("username");
+    return $("#username");
   }
   get passField() {
-    return $("password");
+    return $("#password");
   }
 
   get loginButton() {
-    return $("kc_login");
+    return $("#kc-login");
   }
 
   home() {
     this.nameField.waitForDisplayed(10000);
     this.nameField.click();
-    this.nameField.setValue("ctester");
+    this.nameField.setValue(keyword);
 
     this.passField.click();
-    this.passField.setValue("ctester");
+    this.passField.setValue(keyword);
 
     this.loginButton.waitForDisplayed(10000);
     this.loginButton.click();

@@ -2,4 +2,6 @@ Feature: User Can Log in
 
         Scenario: Login to the initial page for laminarflow
             Given A web browser is at the login page
-             When The user enters the username and  password into the login page and clicks login
+             When The user puts "ctester" in the name field
+              And The user puts "w5KjzGVi2jisTc" in the password field
+             Then The user dashboard is displayed

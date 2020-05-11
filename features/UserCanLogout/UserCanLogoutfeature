@@ -1,0 +1,8 @@
+Feature: Logout
+
+        Scenario: Logout from Laminarflow website
+            Given A web browser is at the login page
+             When The user puts "ctester" in the name field
+              And The user puts "w5KjzGVi2jisTc" in the password field
+              And The user clicks "#root > div > header > div > div > div > div.text"
+              And The user clicks "#root > div > header > div > div > div > div.menu.transition.visible > a:nth-child(2)"

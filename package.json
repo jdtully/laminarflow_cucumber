@@ -35,6 +35,7 @@
   "dependencies": {
     "@wdio/cli": "^5.22.4",
     "babel-install": "^2.1.0",
+    "dotenv": "^8.2.0",
     "selenium-cucumber-js": "^1.7.0",
     "webdriver": "^5.11.12"
   }

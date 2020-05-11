@@ -13,3 +13,7 @@ Then("The user dashboard is displayed", () => {
     }
   });
 });
+
+Then(/^We need to write this "(.*)"$/, (keyword) => {
+  console.log("We need to write this : " + keyword);
+});

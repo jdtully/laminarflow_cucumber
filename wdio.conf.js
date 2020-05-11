@@ -168,6 +168,7 @@ exports.config = {
    */
   beforeSession: function (config, capabilities, specs) {
     require("@babel/register");
+    require("dotenv").config();
   },
   /**
    * Gets executed before test execution begins. At this point you can access to all global

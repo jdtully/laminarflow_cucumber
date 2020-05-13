@@ -135,4 +135,4 @@ const links = {
   },
 };
 
-export { links };
+exports.links = links;

@@ -2,17 +2,7 @@ import { Then } from "cucumber";
 import assert from "assert";
 
 Then(/^The "(.*)" is displayed$/, (keyword) => {
-  const links = $$("#root > div > header > div");
-  var keylower = keyword.toLowerCase();
-  links.forEach((link) => {
-    const linkText = link.getText().toLowerCase();
-    if (linkText) {
-      assert(
-        linkText.includes(keylower),
-        `Link Text does not include ${keylower}`
-      );
-    }
-  });
+  if (assert($(keyword).isDisplayed(), `Webpage does not include ${keyword}`));
 });
 
 Then(/^We need to write this "(.*)"$/, (keyword) => {

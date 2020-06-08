@@ -12,8 +12,8 @@ When(/^The user puts the "(.*)" password in the password field$/, (keyword) => {
   $("#password").setValue(keyword);
 });
 
-When(/^The user clicks login$/, () => {
-  //$("#kc-login").waitForDisplayed(10000);
+When("The user clicks login", () => {
+  $("#kc-login").waitForDisplayed(5000);
   $("#kc-login").click();
 });
 

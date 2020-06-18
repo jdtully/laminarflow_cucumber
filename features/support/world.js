@@ -1,6 +1,6 @@
 var seleniumWebdriver = require("selenium-webdriver");
 //var firefox = require('selenium-webdriver/firefox');
-var chrome = require("selenium-webdriver/chrome");
+//var chrome = require("selenium-webdriver/chrome");
 
 function CustomWorld() {
   this.driver = new seleniumWebdriver.Builder().forBrowser("chrome").build();
